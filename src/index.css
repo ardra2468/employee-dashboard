@@ -1,0 +1,57 @@
+:root {
+  --navy-50: #f0f4f8;
+  --navy-100: #d9e2ec;
+  --navy-200: #bcccdc;
+  --navy-300: #9fb3c8;
+  --navy-400: #748da6;
+  --navy-500: #486581;
+  --navy-600: #334e68;
+  --navy-700: #243b53;
+  --navy-800: #102a43;
+  --navy-900: #0a1f2e;
+}
+
+body {
+  background: linear-gradient(180deg, var(--navy-50), var(--navy-100));
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Navbar */
+.navbar-coffee {
+  background: linear-gradient(90deg, var(--navy-700), var(--navy-500));
+}
+
+.navbar-coffee .nav-link {
+  color: #fff !important;
+}
+
+.navbar-coffee .navbar-brand {
+  font-weight: 600;
+}
+
+/* Titles */
+.coffee-title {
+  color: var(--navy-900);
+}
+
+/* Table */
+.table-coffee thead th {
+  background: linear-gradient(90deg, var(--navy-300), var(--navy-200));
+  color: var(--navy-900);
+}
+
+.table-coffee tbody tr:nth-child(odd) {
+  background: rgba(72,101,129,0.06);
+}
+
+/* Form card */
+.form-coffee {
+  border: 1px solid rgba(0,0,0,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,250,245,0.9));
+}
+
+/* Small responsive tweak */
+@media (max-width: 576px) {
+  .navbar-coffee .nav-link { font-size: 0.95rem; }
+}
